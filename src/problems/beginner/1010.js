@@ -8,4 +8,4 @@ lines.map(el => {
     totalSale += parseFloat(product[1]) * parseFloat(product[2]);
 });
 
-console.log("VALOR A PAGAR: R$ " + totalSale);
+console.log("VALOR A PAGAR: R$ " + totalSale.toFixed(2));
