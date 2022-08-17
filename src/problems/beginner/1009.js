@@ -1,10 +1,13 @@
-let input = require('fs').readFileSync('/dev/stdin', 'utf8');
-let lines = input.split('\n');
+function _1009_(lines) {
+    let name = lines.shift();
+    let salary = parseFloat(lines.shift());
+    let sales = parseFloat(lines.shift());
 
-let name = lines.shift();
-let salary = parseFloat(lines.shift());
-let sales = parseFloat(lines.shift());
+    let totalSalary = (salary + (sales * 0.15)).toFixed(2);
 
-let totalSalary = (salary + (sales * 0.15)).toFixed(2);
+    return "TOTAL = R$ " + totalSalary;
+}
 
-console.log("TOTAL = R$ "+totalSalary);
+//console.log(_1009_(lines));
+
+module.exports = _1009_;
