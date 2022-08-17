@@ -1,11 +1,14 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+function _1008_(lines) {
+    var num = parseInt(lines.shift());
+    var hours = parseInt(lines.shift());
+    var priceHour = parseFloat(lines.shift());
 
-var num = parseInt(lines.shift());
-var hours = parseInt(lines.shift());
-var priceHour = parseFloat(lines.shift());
+    var salario = (hours * priceHour).toFixed(2);
 
-var salario = (hours * priceHour).toFixed(2);
+    return "NUMBER = " + num + "\n" +
+           "SALARY = U$ " + salario;
+}
 
-console.log("NUMBER = "+num);
-console.log("SALARY = U$ "+salario);
+//console.log(_1008_(lines));
+
+module.exports = _1008_;
