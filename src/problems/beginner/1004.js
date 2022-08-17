@@ -1,9 +1,12 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+function _1004_(lines) {
+    var a = parseInt(lines.shift());
+    var b = parseInt(lines.shift());
 
-var a = parseInt(lines.shift());
-var b = parseInt(lines.shift());
+    var PROD = a * b;
 
-var PROD = a * b;
+    return "PROD = " + PROD;
+}
 
-console.log("PROD = "+PROD);
+//console.log(_1004_(lines));
+
+module.exports = _1004_;
