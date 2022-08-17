@@ -1,9 +1,11 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+function _1005_(lines) {
+    var a = parseFloat(lines.shift());
+    var b = parseFloat(lines.shift());
+    var res = ((a * 3.5) + (b * 7.5)) / 11;
 
-var a = parseFloat(lines.shift());
-var b = parseFloat(lines.shift());
+    return "MEDIA = " + res.toFixed(5);
+}
 
-var res = ((a*3.5) + (b*7.5))/11;
+//console.log(_1005_(lines));
 
-console.log("MEDIA = "+res.toFixed(5));
+module.exports = _1005_;
