@@ -1,8 +1,12 @@
-let input = require('fs').readFileSync('/dev/stdin', 'utf8');
-let lines = input.split('\n');
+function _1011_(lines) {
 
-let radius = parseInt(lines.shift());
+    let radius = parseInt(lines.shift());
 
-let volume = (4 / 3) * 3.14159 * Math.pow(radius, 3);
+    let volume = (4 / 3) * 3.14159 * Math.pow(radius, 3);
 
-console.log("VOLUME = " + volume.toFixed(3));
+    return "VOLUME = " + volume.toFixed(3);
+}
+
+//console.log(_1011_(lines));
+
+module.exports = _1011_;
