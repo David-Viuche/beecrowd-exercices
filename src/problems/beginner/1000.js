@@ -1,4 +1,7 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+function _1000_ () {
+    return 'Hello World!';
+}
 
-console.log("Hello World!");
+console.log(_1000_());
+
+module.exports = _1000_;

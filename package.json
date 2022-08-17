@@ -1,0 +1,25 @@
+{
+  "name": "beecrowd-exercices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/David-Viuche/beecrowd-exercices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/David-Viuche/beecrowd-exercices/issues"
+  },
+  "homepage": "https://github.com/David-Viuche/beecrowd-exercices#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
