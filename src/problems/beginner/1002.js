@@ -1,8 +1,10 @@
-var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-var lines = input.split('\n');
+function _1002_(lines) {
+    var n = 3.14159;
+    raio = parseFloat(lines.shift());
+    var area = (Math.pow(raio,2)) * n;
+    return 'A='+area.toFixed(4);
+}
 
-var n = 3.14159;
-raio = parseFloat(lines.shift());
-var area = (Math.pow(raio,2)) * n;
+//console.log(_1002_(lines));
 
-console.log('A='+area.toFixed(4));
+module.exports = _1002_;
