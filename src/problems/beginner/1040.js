@@ -8,7 +8,7 @@ function _1040_(lines) {
 	let n3 = parseFloat(data[2]);
 	let n4 = parseFloat(data[3]);
 
-	let mean = ((n1 + n2 + n3 + n4) / 4).toFixed(1);
+	let mean = ((n1 * 2 + n2 * 3 + n3 * 4 + n4 * 1) / 10).toFixed(1);
 
 	let res = 'Media: ' + mean;
 
@@ -36,7 +36,7 @@ function _1040_(lines) {
 		res += '\nAluno reprovado.';
 	}
 
-	res += `\nMedia final: ${mean}\n`;
+	res += `\nMedia final: ${mean}`;
 
 	return res
 }
