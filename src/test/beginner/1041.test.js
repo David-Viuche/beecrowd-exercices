@@ -12,3 +12,7 @@ test('1041 case 2 ', ()=>{
 test('1041 case 3 ', ()=>{
     expect(_1041_(['0.0 0.0'])).toBe('Origem')
 });
+
+test('1041 case 4 ', ()=>{
+    expect(_1041_(['2.5 0.0'])).toBe('Eixo X')
+});

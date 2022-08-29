@@ -3,10 +3,10 @@ function _1041_(lines) {
 
 	let data = lines.shift().split(' ');
 
-	let x = parseFloat(data[0]).toFixed(1);
-	let y = parseFloat(data[1]).toFixed(1);
+	let x = parseFloat(data[0]);
+	let y = parseFloat(data[1]);
 
-	if (x == 0.0 && y == 0.0) {
+	if (x == 0 && y == 0) {
 		return 'Origem';
 	}
 
@@ -22,12 +22,12 @@ function _1041_(lines) {
 		return 'Q3';
 	}
 
-	if (x == 0.0) {
-		return 'Eixo X';
+	if (x == 0) {
+		return 'Eixo Y';
 	}
 
-	if (y == 0.0) {
-		return 'Eixo Y';
+	if (y == 0) {
+		return 'Eixo X';
 	}
 
 	return 'Q2';
