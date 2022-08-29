@@ -41,6 +41,6 @@ function _1040_(lines) {
 	return res
 }
 
-console.log(_1040_(['1.0 10.0 10.0 0.0']));
+//console.log(_1040_(lines));
 
 module.exports = _1040_;
